@@ -12,10 +12,12 @@ public class snake_ladder {
     static final int LADDER = 3;
     static final int WINNING_POSITION = 100;
     static final int INITIAL_POSITION = 0;
-
+    static int dieCount;
     static int dieRoll() {
         int dice = (int) (Math.random() * 10) % 6 + 1;
+        dieCount++;
         return dice;
+
     }
 
     static int getOption() {
@@ -45,7 +47,7 @@ public class snake_ladder {
                 default:
 
             }
-
+            System.out.println("Current position= "+position);
         }
     }
 }
