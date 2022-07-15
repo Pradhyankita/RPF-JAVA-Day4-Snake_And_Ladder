@@ -34,7 +34,11 @@ public class snake_ladder {
                     }
                     break;
                 case LADDER:
-                    position += dieNum;
+                    //position += dieNum;
+                    if(position+dieNum < WINNING_POSITION){
+                        position+=dieNum;
+
+                    }
                     break;
                 case NO_PLAY:
                     break;
